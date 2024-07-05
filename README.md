@@ -5,6 +5,7 @@ In this code we solved the classification problem of detecting what number is wr
 
 # Dataset
 MNIST library
+![MNIST dataset of written digits](MNIST.png)
 
 # GitHub Actions
 
