@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops_proj  # Replace "my-app" with your desired deployment name
+spec:
+  replicas: 1  # Number of pod replicas (how many instances of your application will run)
+  selector:
+    matchLabels:
+      app: devops_proj  # This label should match the label in your container definition
+  template:
+    metadata:
+      labels:
+        app: devops_proj  # Matches the selector label
+    spec:
+      containers:
+      - name: devops_proj  # Container name (can be the same as the deployment name)
+        image: "digit-classification-app"  # Replace with the image you want to deploy (e.g., nginx:latest)
+        ports:
+        - containerPort: 80  # Port your application listens on (e.g., web server on port 80)
