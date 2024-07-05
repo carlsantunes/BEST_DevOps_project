@@ -22,10 +22,11 @@ Accuracy: 90%
 
 # Docker
 - docker build -t digit-classification-app .
-- docker push whorudude/best_devops_project:2.0.0
 - docker images
 - docker run digit-classification-app
 
+# Kube
+- kubectl apply -f deployment.yaml
 
 # Authors
 - Arina
