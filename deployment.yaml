@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: devops_proj  # Container name (can be the same as the deployment name)
-        image: "whorudude/best_devops_project:latest"  # Replace with the image you want to deploy (e.g., nginx:latest)
+        image: "digit-classification-app"  # Replace with the image you want to deploy (e.g., nginx:latest)
         ports:
         - containerPort: 80  # Port your application listens on (e.g., web server on port 80)
