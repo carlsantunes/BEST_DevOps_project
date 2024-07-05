@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8000
 
 # Command to run the application when the container starts
-CMD ["python", "app.py"]
+CMD ["python", "test_digit_classification.py"]
