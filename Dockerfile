@@ -13,8 +13,12 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the files
 COPY . .
 
-# Define the port your application will run on (if necessary)
-EXPOSE 8000
 
-# Command to run the application when the container starts
-CMD ["python", "test_digit_classification.py"]
+# Create a simple hello.txt file
+RUN echo "Hello, world!" > hello.txt
+
+RUN python -u digit_classification.py
+
+ENTRYPOINT ["python", "-u", "digit_classification.py"]
+
+
