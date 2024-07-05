@@ -48,8 +48,10 @@ def run() -> float:
                         callbacks=[es])
 
     # Test model
-    score = model.evaluate(x_test, y_test, verbose=1)
-    return float(score[1] * 100)
+    score = model.evaluate(x_test, y_test, verbose=1) * 100
+    score = score[1] * 100
+    print(f"Prediction accuracy: {score:.2f}%")
+    return score
 
 
 if __name__ == "__main__":
