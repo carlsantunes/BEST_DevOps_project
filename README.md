@@ -20,6 +20,13 @@ Accuracy: 90%
 
 # GitHub Actions
 
+# Docker
+- docker build -t digit-classification-app .
+- docker push whorudude/best_devops_project:2.0.0
+- docker images
+- docker run digit-classification-app
+
+
 # Authors
 - Arina
 - Carlos
